@@ -30,52 +30,58 @@
                     <!----------------- Memory Button ---------------->
                     <div class="mt-5">
                         <h4 class="fw-bold">Memory</h4>
-                        <button type="button" class="btn btn-outline-dark">8GB unified memory</button>
-                        <button type="button" class="btn btn-outline-dark">16GB unified memory</button>
+                        <button id="memory8gb-button" type="button" class="btn btn-outline-dark">8GB unified
+                            memory</button>
+                        <button id="memory16gb-button" type="button" class="btn btn-outline-dark">16GB unified
+                            memory</button>
                     </div>
                     <!-------------------- Storage Button ---------------->
                     <div class="mt-5">
                         <h4 class="fw-bold">Storage</h4>
-                        <button type="button" class="btn btn-outline-dark">256GB SSD storage</button>
-                        <button type="button" class="btn btn-outline-dark">512GB SSD storage</button>
-                        <button type="button" class="btn btn-outline-dark">1TB SSD storage</button>
+                        <button id="ssd256gb-button" type="button" class="btn btn-outline-dark">256GB SSD
+                            storage</button>
+                        <button id="ssd512gb-button" type="button" class="btn btn-outline-dark">512GB SSD
+                            storage</button>
+                        <button id="ssd1tb-button" type="button" class="btn btn-outline-dark">1TB SSD storage</button>
                     </div>
                     <!--------------------- Delivery Option ------------------>
                     <div class="mt-5">
                         <h4 class="fw-bold">Choose your delivery option</h4>
-                        <button type="button" class="btn btn-outline-dark">Friday,Aug 25 FREE Prime Delivery</button>
-                        <button type="button" class="btn btn-outline-dark">Friday, Aug 21 Delivery charge $20</button>
+                        <button id="free-delivery-button" type="button" class="btn btn-outline-dark">Friday,Aug 25 FREE
+                            Prime Delivery</button>
+                        <button id="charge-delivery-button" type="button" class="btn btn-outline-dark">Friday, Aug 21
+                            Delivery charge $20</button>
                     </div>
                     <!-------------------------- Price Calculate --------------->
                     <div class="total-price">
                         <table class="table table-border mt-5">
                             <tr>
                                 <td class="fw-bold">Best Price</td>
-                                <td class="fw-bold">$1299</td>
+                                <td class="fw-bold">$<span id="best-price">1299</span></td>
                             </tr>
                             <tr>
                                 <td class="fw-bold">Extra Memory Cost</td>
-                                <td class="fw-bold">$0</td>
+                                <td class="fw-bold">$<span id="memory-cost">0</span></td>
                             </tr>
                             <tr>
                                 <td class="fw-bold">Extra Storage Cost</td>
-                                <td class="fw-bold">$0</td>
+                                <td class="fw-bold">$<span id="storage-cost">0</span></td>
                             </tr>
                             <tr>
                                 <td class="fw-bold">Delivery Charge</td>
-                                <td class="fw-bold">$0</td>
+                                <td class="fw-bold">$<span id="delivery-cost">0</span></td>
                             </tr>
                             <tr>
                                 <td class="fw-bold">Total Price</td>
-                                <td class="fw-bold">$1299</td>
+                                <td class="fw-bold">$<span id="total">1299</span></td>
                             </tr>
                         </table>
                     </div>
                     <!--------------- Apply Button ----------------->
                     <div>
                         <p class="mb-0 fw-bold">Add pomo code</p>
-                        <input class="apply-button-input px-0" type="text">
-                        <button class="apply-button">Apply</button>
+                        <input id="pomo-input" class="apply-button-input px-0" type="text">
+                        <button id="apply-btn" class="apply-button">Apply</button>
                     </div>
 
                 </div>
@@ -83,12 +89,12 @@
                     <hr>
                 </span>
                 <!------------------ Total ------------------>
-                <h2 class="fw-bold text-center pb-5">Total: $1299</h2>
+                <h2 class="fw-bold text-center pb-5">Total: $<span id="grand-total">1299</span></h2>
             </div>
 
         </section>
     </main>
-    <!-- js link -->
+    <!---------------------- js link ------------------------->
     <script src="js/main.js"></script>
 </body>
 
